@@ -1,11 +1,24 @@
 [image1]: ParticleFilter_Pass.png
 [image2]: ParticleFilter_Running.png
 
-# Overview
-This repository contains all the code needed to complete the final project for the Localization course in Udacity's Self-Driving Car Nanodegree. ![image1_name][image1] 
+# Kidnapped Vehicle Project Overview
+This repository contains all the code for the Vehicle Localization by applying Particle Filter technique. The main script that describes the particle filter algorithm is 'particle_filter.cpp' located in the 'src' folder. In order to pass the rubric criteria, the algorithm must be run successfully witin specified time of 100 seconds. The main script includes following functions:
 
-#### Submission
-All you will submit is your completed version of `particle_filter.cpp`, which is located in the `src` directory. You should probably do a `git pull` before submitting to verify that your project passes the most up-to-date version of the grading code (there are some parameters in `src/main.cpp` which govern the requirements on accuracy and run time.)
+1. "init": Initialize particle position (x,y) and heading (theta),
+
+2. "prediction": Predict the vehicle position and heading using kinematics equation of motion,
+
+3. "dataAssociation": Find the predicted measurement that is closest to each observed measurement and assign the observed measurement to this particular landmark,
+
+4. "updateWeights": Update the weights of each particle using a mult-variate Gaussian distribution,
+
+5. "resampple": Resample particles with replacement with probability proportional to their weight,
+
+6. "SetAssociations": reset particle information (associations, sense_x, sense_y), and
+
+7. "getAssociations", "getSenseX", "getSenseY"
+
+![image1_name][image1] 
 
 ## Project Introduction
 Your robot has been kidnapped and transported to a new location! Luckily it has a map of this location, a (noisy) GPS estimate of its initial location, and lots of (noisy) sensor and control data.
