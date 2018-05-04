@@ -1,3 +1,6 @@
+[image1]: Pic_Dataset1.png
+[image2]: Pic_Dataset2.png
+
 # Overview
 This repository contains all the code needed to complete the final project for the Localization course in Udacity's Self-Driving Car Nanodegree.
 
@@ -144,3 +147,23 @@ A well written README file can enhance your project and portfolio.  Develop your
 
 
 
+
+
+
+
+# Extended Kalman Filter Project 
+[image1]: ./Pic_Dataset1.png
+[image2]: ./Pic_Dataset2.png
+In this project, an Extended Kalman Filter (EKF) technique is utilize to estimate the state of a moving object given the noisy lidar and radar measurements. The spec for the root mean square error (rmse) of all 4 states [px, py, vx, vy] is given by [0.11, 0.11, 0.52, 0.52]. The EKF is implemented in c++. The details of EKF algorithm are given in the src folder:
+
+Given the two datasets, the rmse values are:
+
+Dataset 1: RMSE = [0.0973, 0.0855, 0.4513, 0.4399], and
+
+Dataset 2: RMSE = [0.0726, 0.0965, 0.4216, 0.4932].
+
+The simulation results are shown as following:
+![EKF estimation result given Dataset 1, Green: Estimated states, Red: Lidar measurement, Blue: Radar measurement][image1] 
+
+
+![EKF estimation result given Dataset 2][image2] 
