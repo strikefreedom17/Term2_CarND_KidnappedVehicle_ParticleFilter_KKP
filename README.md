@@ -2,7 +2,7 @@
 [image2]: ParticleFilter_Running.png
 
 # Kidnapped Vehicle Project Overview
-This repository contains all the code for the Vehicle Localization by applying Particle Filter technique. The main script that describes the particle filter algorithm is 'particle_filter.cpp' located in the 'src' folder. In order to pass the rubric criteria, the algorithm must be run successfully witin specified time of 100 seconds. The main script includes following functions:
+This repository contains all the code for the Vehicle Localization by applying Particle Filter technique. The main script that describes the particle filter algorithm is 'particle_filter.cpp' located in the 'src' folder. In order to pass the rubric criteria, the algorithm must be run successfully witin specified time of 100 seconds. The main script includes following functions (in C++):
 
 1. "init": Initialize particle position (x,y) and heading (theta),
 
@@ -18,12 +18,14 @@ This repository contains all the code for the Vehicle Localization by applying P
 
 7. "getAssociations", "getSenseX", "getSenseY"
 
+If the particle filter algorithm is successfully implemented, the simulation result displays as follows:
 ![image1_name][image1] 
 
-## Project Introduction
-Your robot has been kidnapped and transported to a new location! Luckily it has a map of this location, a (noisy) GPS estimate of its initial location, and lots of (noisy) sensor and control data.
 
-In this project you will implement a 2 dimensional particle filter in C++. Your particle filter will be given a map and some initial localization information (analogous to what a GPS would provide). At each time step your filter will also get observation and control data. 
+## Project Introduction
+The robot has been kidnapped and transported to a new location! Luckily it has a map of this location, a (noisy) GPS estimate of its initial location, and lots of (noisy) sensor and control data.
+
+In this project, a 2 dimensional particle filter algorithm is implemented in C++. The particle filter will be given a map and some initial localization information (analogous to what a GPS would provide). At each time step your filter will also get observation and control data. 
 
 ## Running the Code
 This project involves the Term 2 Simulator which can be downloaded [here](https://github.com/udacity/self-driving-car-sim/releases)
@@ -36,19 +38,6 @@ Once the install for uWebSocketIO is complete, the main program can be built and
 2. cd build
 3. cmake ..
 4. make
-5. ./particle_filter
-
-Alternatively some scripts have been included to streamline this process, these can be leveraged by executing the following in the top directory of the project:
-
-1. ./clean.sh
-2. ./build.sh
-3. ./run.sh
-
-Tips for setting up your environment can be found [here](https://classroom.udacity.com/nanodegrees/nd013/parts/40f38239-66b6-46ec-ae68-03afd8a601c8/modules/0949fca6-b379-42af-a919-ee50aa304e6a/lessons/f758c44c-5e40-4e01-93b5-1a82aa4e044f/concepts/23d376c7-0195-4276-bdf0-e02f1f3c665d)
-
-Note that the programs that need to be written to accomplish the project are src/particle_filter.cpp, and particle_filter.h
-
-The program main.cpp has already been filled out, but feel free to modify it.
 
 Here is the main protcol that main.cpp uses for uWebSocketIO in communicating with the simulator.
 
