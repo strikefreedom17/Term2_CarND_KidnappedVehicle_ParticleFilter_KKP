@@ -87,7 +87,7 @@ OUTPUT: values provided by the c++ program to the simulator
 ["best_particle_sense_y"] <= list of sensed y positions
 
 
-Your job is to build out the methods in `particle_filter.cpp` until the simulator output says:
+The main task in this project is to build out the methods in `particle_filter.cpp` until the simulator output says:
 
 ```
 Success! Your particle filter passed!
@@ -117,12 +117,12 @@ root
     |   particle_filter.h
 ```
 
-The only file you should modify is `particle_filter.cpp` in the `src` directory. The file contains the scaffolding of a `ParticleFilter` class and some associated methods. Read through the code, the comments, and the header file `particle_filter.h` to get a sense for what this code is expected to do.
+The main file needed to be modified is `particle_filter.cpp` in the `src` directory. The file contains the scaffolding of a `ParticleFilter` class and some associated methods. Read through the code, the comments, and the header file `particle_filter.h` to get a sense for what this code is expected to do.
 
-If you are interested, take a look at `src/main.cpp` as well. This file contains the code that will actually be running your particle filter and calling the associated methods.
+The `src/main.cpp` file contains the code that will actually be running your particle filter and calling the associated methods.
 
 ## Inputs to the Particle Filter
-You can find the inputs to the particle filter in the `data` directory. 
+The inputs to the particle filter in the `data` directory. 
 
 #### The Map*
 `map_data.txt` includes the position of landmarks (in meters) on an arbitrary Cartesian coordinate system. Each row has three columns
@@ -134,38 +134,4 @@ You can find the inputs to the particle filter in the `data` directory.
 
 > * Map data provided by 3D Mapping Solutions GmbH.
 
-## Success Criteria
-If your particle filter passes the current grading code in the simulator (you can make sure you have the current version at any time by doing a `git pull`), then you should pass! 
 
-The things the grading code is looking for are:
-
-
-1. **Accuracy**: your particle filter should localize vehicle position and yaw to within the values specified in the parameters `max_translation_error` and `max_yaw_error` in `src/main.cpp`.
-
-2. **Performance**: your particle filter should complete execution within the time of 100 seconds.
-
-## How to write a README
-A well written README file can enhance your project and portfolio.  Develop your abilities to create professional README files by completing [this free course](https://www.udacity.com/course/writing-readmes--ud777).
-
-
-
-
-
-
-
-# Extended Kalman Filter Project 
-[image1]: ./Pic_Dataset1.png
-[image2]: ./Pic_Dataset2.png
-In this project, an Extended Kalman Filter (EKF) technique is utilize to estimate the state of a moving object given the noisy lidar and radar measurements. The spec for the root mean square error (rmse) of all 4 states [px, py, vx, vy] is given by [0.11, 0.11, 0.52, 0.52]. The EKF is implemented in c++. The details of EKF algorithm are given in the src folder:
-
-Given the two datasets, the rmse values are:
-
-Dataset 1: RMSE = [0.0973, 0.0855, 0.4513, 0.4399], and
-
-Dataset 2: RMSE = [0.0726, 0.0965, 0.4216, 0.4932].
-
-The simulation results are shown as following:
-![EKF estimation result given Dataset 1, Green: Estimated states, Red: Lidar measurement, Blue: Radar measurement][image1] 
-
-
-![EKF estimation result given Dataset 2][image2] 
