@@ -19,7 +19,7 @@ This repository contains all the code for the Vehicle Localization by applying P
 7. "getAssociations", "getSenseX", "getSenseY"
 
 If the particle filter algorithm is successfully implemented, the simulation result displays as follows:
-![Successful particle filter implementation][image1] 
+![Successful particle filter implementation][image2] 
 
 
 ## Project Introduction
@@ -93,7 +93,7 @@ The main task in this project is to build out the methods in `particle_filter.cp
 Success! Your particle filter passed!
 ```
 
-![Running the particle filter in simulation][image2] 
+![Running the particle filter in simulation][image1] 
 
 # Implementing the Particle Filter
 The directory structure of this repository is as follows:
