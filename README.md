@@ -93,7 +93,7 @@ The main task in this project is to build out the methods in `particle_filter.cp
 Success! Your particle filter passed!
 ```
 
-![Running the particle filter in simulation][image1] 
+![Running the particle filter in simulation][image2] 
 
 # Implementing the Particle Filter
 The directory structure of this repository is as follows:
